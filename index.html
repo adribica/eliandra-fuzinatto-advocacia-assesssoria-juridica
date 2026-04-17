@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Eliandra Fuzinatto Advocacia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&amp;family=Noto+Serif:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#fcf9f4",
+                        "surface-bright": "#fcf9f4",
+                        "inverse-primary": "#e7bdb1",
+                        "on-tertiary-fixed": "#2d1600",
+                        "on-primary-fixed-variant": "#5d4037",
+                        "primary": "#442a22",
+                        "primary-container": "#5d4037",
+                        "secondary-container": "#fed488",
+                        "on-primary-fixed": "#2c160e",
+                        "secondary-fixed": "#ffdea5",
+                        "secondary-fixed-dim": "#e9c176",
+                        "tertiary-fixed": "#ffdcc0",
+                        "on-secondary-container": "#785a1a",
+                        "on-surface": "#1c1c19",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "on-tertiary-container": "#e3aa77",
+                        "on-primary-container": "#d4ada1",
+                        "primary-fixed": "#ffdbd0",
+                        "outline-variant": "#d4c3be",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#663e14",
+                        "on-surface-variant": "#504441",
+                        "surface-tint": "#77574d",
+                        "surface-dim": "#dcdad5",
+                        "surface-container-highest": "#e5e2dd",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#e7bdb1",
+                        "on-secondary-fixed": "#261900",
+                        "tertiary-fixed-dim": "#f6bb86",
+                        "on-error-container": "#93000a",
+                        "outline": "#827470",
+                        "inverse-surface": "#31302d",
+                        "secondary": "#775a19",
+                        "surface-container-high": "#ebe8e3",
+                        "surface-variant": "#e5e2dd",
+                        "surface-container": "#f0ede8",
+                        "tertiary": "#4b2801",
+                        "inverse-on-surface": "#f3f0eb",
+                        "error": "#ba1a1a",
+                        "on-background": "#1c1c19",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f6f3ee",
+                        "on-tertiary-fixed-variant": "#663d14",
+                        "surface": "#fcf9f4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif", "serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { background-color: theme('colors.background'); }
+        
+        .glass-card {
+            background-color: rgba(229, 226, 221, 0.4); /* surface-variant with 40% opacity */
+            backdrop-filter: blur(16px);
+            border-radius: theme('borderRadius.lg');
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, theme('colors.primary'), theme('colors.primary-container'));
+        }
+    </style>
+</head>
+<body class="font-body text-on-surface antialiased bg-background">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/60 dark:bg-stone-900/60 backdrop-blur-md shadow-sm dark:shadow-none transition-all duration-300">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-xl font-serif text-stone-900 dark:text-stone-50 tracking-tighter">Eliandra Fuzinatto</div>
+<div class="hidden md:flex gap-8">
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors font-medium tracking-wide" href="#especialidades">Especialidades</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors font-medium tracking-wide" href="#processo">O Processo</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors font-medium tracking-wide" href="#depoimentos">Depoimentos</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors font-medium tracking-wide" href="#faq">FAQ</a>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary rounded-md px-6 py-2 transition-all duration-300 font-medium hover:scale-95">
+                Agendar Consultoria
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden bg-surface-container-low min-h-[921px] flex items-center">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0 opacity-20">
+<img alt="Soft sunlight filtering through windows onto wooden desk with legal books" class="w-full h-full object-cover" data-alt="Soft sunlight filtering through windows onto a rich wooden desk scattered with leather-bound legal books, creating a warm, protective, and professional atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg-cCsBNttTNy1yD_JK5_P30YjsEEtAa7E_w189BHVIphz9BrEAAnVRaWfPV0sga0PJyQawT3BsRNfeSh_n9fbSlpygbyh4ccZ1JIUUiv4h6tkokV9smvw7-U8ATlkhHO5InrPneYdBVoaHPe_PXDJwbWtX1LwKj6wAzLUfodb9hUQC2op0JjcB0XlFqsBExnXoP_-gIGpZaQLpKFYpxTCGEXcEJuikPm0Acj6eNE-4-u_9KtsQ8vMCSDCxSLK4LBA_SGk55JlHH1S"/>
+</div>
+<div class="max-w-7xl mx-auto px-8 relative z-10 w-full">
+<div class="max-w-3xl">
+<div class="flex gap-3 mb-8 overflow-x-auto pb-4 hide-scrollbar">
+<span class="bg-secondary-fixed text-on-secondary-fixed px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap">Inventários</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap">Aposentadoria Especial</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap">Direito de Família</span>
+</div>
+<h1 class="font-headline text-5xl lg:text-[3.5rem] leading-tight tracking-[-0.02em] text-on-surface mb-8">
+                    Preservando seu Legado e Garantindo sua Segurança Familiar
+                </h1>
+<p class="text-lg lg:text-xl text-on-surface-variant mb-12 max-w-2xl leading-relaxed">
+                    Assessoria jurídica especializada em Imbituba/SC. Uma abordagem humana e acolhedora para resolver suas questões de Direito de Família e Previdenciário com a segurança que você merece.
+                </p>
+<div class="flex flex-wrap gap-6">
+<button class="hero-gradient text-on-primary px-8 py-4 rounded-md font-medium text-lg hover:shadow-[0_0_20px_rgba(93,64,55,0.4)] transition-all duration-300">
+                        Agendar Consultoria Especializada
+                    </button>
+<button class="text-primary hover:text-primary-container px-6 py-4 font-medium text-lg border-b-2 border-secondary hover:border-primary transition-all duration-300">
+                        Conhecer o Escritório
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<!-- Services Section -->
+<section class="py-24 bg-background" id="especialidades">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="font-headline text-4xl text-on-surface mb-16 max-w-2xl">Áreas de Atuação Especializada</h2>
+<div class="grid md:grid-cols-2 gap-12">
+<!-- Family Law Card -->
+<div class="glass-card p-10 relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-6 opacity-10 transform group-hover:scale-110 transition-transform duration-700">
+<!-- Placeholder for 3D family tree -->
+<span class="material-symbols-outlined text-8xl" style="font-size: 120px;">family_restroom</span>
+</div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">diversity_1</span>
+<h3 class="font-headline text-2xl text-on-surface mb-4">Direito de Família</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                            Resolução de conflitos familiares com sensibilidade e foco na proteção do seu patrimônio e bem-estar dos envolvidos.
+                        </p>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="text-on-surface">Inventários e Partilhas</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="text-on-surface">Divórcios (Judicial e Extrajudicial)</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="text-on-surface">Pensão Alimentícia e Guarda</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Social Security Card -->
+<div class="glass-card p-10 relative overflow-hidden group">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">account_balance</span>
+<h3 class="font-headline text-2xl text-on-surface mb-4">Segurança Previdenciária</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                            Garantimos que você receba todos os benefícios aos quais tem direito após anos de contribuição.
+                        </p>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="text-on-surface">Aposentadorias (Especial, Tempo de Contribuição, Idade)</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="text-on-surface">Planejamento Previdenciário</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="text-on-surface">Auxílios e Benefícios Assistenciais (BPC/LOAS)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 bg-stone-100 dark:bg-stone-950 border-t border-stone-200/20 mt-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
+<div>
+<div class="font-serif text-lg text-stone-800 dark:text-stone-200 mb-4">Eliandra Fuzinatto</div>
+<p class="text-stone-500 dark:text-stone-400 text-sm mb-2">OAB/RS 31329</p>
+<p class="text-stone-500 dark:text-stone-400 text-sm">
+                    © 2024 Eliandra Fuzinatto Advocacia - OAB/RS 31329. Todos os direitos reservados.
+                </p>
+</div>
+<div>
+<h4 class="font-medium text-stone-700 dark:text-stone-300 mb-4">Contato &amp; Localização</h4>
+<div class="space-y-3 text-sm text-stone-500 dark:text-stone-400">
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">location_on</span> Imbituba/SC</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">phone</span> WhatsApp: (48) 99999-9999</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">mail</span> contato@eliandrafuzinatto.adv.br</p>
+</div>
+</div>
+<div>
+<h4 class="font-medium text-stone-700 dark:text-stone-300 mb-4">Links Úteis</h4>
+<div class="flex flex-col space-y-3">
+<a class="text-sm text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 hover:underline transition-all" href="#">Privacidade</a>
+<a class="text-sm text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 hover:underline transition-all" href="#">Termos de Uso</a>
+<a class="text-sm text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 hover:underline transition-all" href="#">WhatsApp</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
